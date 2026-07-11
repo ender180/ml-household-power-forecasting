@@ -35,8 +35,6 @@ results_weather/
   log.txt                  # 训练日志
 ```
 
-`data/raw/`、完整训练中间结果和 `reports/` 报告文件夹不会上传到仓库。
-
 ## 环境配置
 
 建议使用 Python 3.10 或以上版本。
@@ -118,8 +116,6 @@ python -m ml_power_forecast.train --models lstm --horizons 90 --seeds 1 --epochs
 - `summary.md`：Markdown 版本汇总表
 - `all_runs.csv`：每个模型、预测长度和随机种子的完整指标
 - `log.txt`：命令行训练日志
-
-完整的模型中间文件、预测曲线和缓存文件默认不上传到 GitHub，避免仓库过大。
 
 ## 模型说明
 
