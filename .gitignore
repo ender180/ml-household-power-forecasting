@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/
+data/processed/
+results/
+results_weather/**
+!results_weather/
+!results_weather/summary.csv
+!results_weather/summary.md
+!results_weather/all_runs.csv
+!results_weather/log.txt
+*.pth
+*.pt
+
+# Local assignment handout / raw prompt document
+2026-专硕机器学习课程考核.pdf
+
+# Generated reports and rendering intermediates
+reports/
+
+# Keep generated report documents, ignore temporary office files.
+~$*
+*.tmp

@@ -1,0 +1,71 @@
+(mech-learn) rjjiang@cu13:~/homework/Machine_Learning$ python -m ml_power_forecast.train --train-csv data/raw/train_weather.csv --test-csv data/raw/test_weather.csv --out-dir results_weather --models lstm transformer conv_transformer --horizons 90 365 --seeds 2026 2027 2028 2029 2030 --epochs 80 --batch-size 32 --device auto
+lstm-h90-s2026:  25%|██████████████████████████████████████                                                                                                                  | 20/80 [00:04<00:13,  4.31it/s]
+lstm-h90-s2027:  25%|██████████████████████████████████████                                                                                                                  | 20/80 [00:03<00:09,  6.00it/s]
+lstm-h90-s2028:  26%|███████████████████████████████████████▉                                                                                                                | 21/80 [00:03<00:10,  5.86it/s]
+lstm-h90-s2029:  26%|███████████████████████████████████████▉                                                                                                                | 21/80 [00:04<00:11,  5.06it/s]
+lstm-h90-s2030:  19%|████████████████████████████▌                                                                                                                           | 15/80 [00:03<00:13,  4.85it/s]
+lstm-h365-s2026:  22%|█████████████████████████████████▉                                                                                                                     | 18/80 [00:01<00:03, 16.68it/s]
+lstm-h365-s2027:  25%|█████████████████████████████████████▊                                                                                                                 | 20/80 [00:01<00:03, 15.04it/s]
+lstm-h365-s2028:  22%|█████████████████████████████████▉                                                                                                                     | 18/80 [00:01<00:03, 16.32it/s]
+lstm-h365-s2029:  20%|██████████████████████████████▏                                                                                                                        | 16/80 [00:00<00:03, 16.44it/s]
+lstm-h365-s2030:  28%|█████████████████████████████████████████▌                                                                                                             | 22/80 [00:01<00:03, 18.80it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h90-s2026:  21%|██████████████████████████████▊                                                                                                                  | 17/80 [00:04<00:16,  3.83it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h90-s2027:  16%|███████████████████████▌                                                                                                                         | 13/80 [00:04<00:21,  3.17it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h90-s2028:  29%|█████████████████████████████████████████▋                                                                                                       | 23/80 [00:06<00:15,  3.59it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h90-s2029:  16%|███████████████████████▌                                                                                                                         | 13/80 [00:04<00:20,  3.25it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h90-s2030:  68%|█████████████████████████████████████████████████████████████████████████████████████████████████▉                                               | 54/80 [00:15<00:07,  3.52it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h365-s2026:  16%|███████████████████████▍                                                                                                                        | 13/80 [00:01<00:06, 11.08it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h365-s2027:  59%|████████████████████████████████████████████████████████████████████████████████████▌                                                           | 47/80 [00:04<00:02, 11.56it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h365-s2028:  15%|█████████████████████▌                                                                                                                          | 12/80 [00:01<00:06, 10.28it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h365-s2029:  19%|███████████████████████████                                                                                                                     | 15/80 [00:01<00:05, 11.07it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+transformer-h365-s2030:  21%|██████████████████████████████▌                                                                                                                 | 17/80 [00:01<00:05, 11.42it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h90-s2026:  15%|█████████████████████                                                                                                                       | 12/80 [00:05<00:31,  2.13it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h90-s2027:  15%|█████████████████████                                                                                                                       | 12/80 [00:04<00:25,  2.68it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h90-s2028:  15%|█████████████████████                                                                                                                       | 12/80 [00:04<00:24,  2.73it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h90-s2029:  15%|█████████████████████                                                                                                                       | 12/80 [00:04<00:26,  2.61it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h90-s2030:  21%|█████████████████████████████▊                                                                                                              | 17/80 [00:06<00:23,  2.71it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h365-s2026:  42%|███████████████████████████████████████████████████████████                                                                                | 34/80 [00:04<00:05,  8.00it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h365-s2027:  15%|████████████████████▊                                                                                                                      | 12/80 [00:01<00:08,  8.30it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h365-s2028:  15%|████████████████████▊                                                                                                                      | 12/80 [00:01<00:07,  8.87it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h365-s2029:  15%|████████████████████▊                                                                                                                      | 12/80 [00:01<00:06, 10.15it/s]
+/home/rjjiang/anaconda3/envs/mech-learn/lib/python3.10/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+conv_transformer-h365-s2030:  15%|████████████████████▊                                                                                                                      | 12/80 [00:01<00:06,  9.71it/s]
